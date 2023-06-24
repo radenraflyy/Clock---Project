@@ -7,10 +7,12 @@ function clockReal() {
   const seconds = now.getSeconds()
   const secondDegres = (seconds / 60) * 360 + 90
   handleSeconds.style.transform = `rotate(${secondDegres}deg)`
+  handleSeconds.style.height = '2px'
 
   const minutes = now.getMinutes()
   const minutesDegres = (minutes / 60) * 360 + 90
   handleMinutes.style.transform = `rotate(${minutesDegres}deg)`
+  handleMinutes.style.height = '5px'
 
   const hours = now.getHours()
   const hoursDegres = (hours / 12) * 360 + 90
